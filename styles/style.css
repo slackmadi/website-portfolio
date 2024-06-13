@@ -480,7 +480,7 @@ nav ul li a:hover {
 
 .languages-icon {
     background: var(--thirdBackgroundColor);
-    width: 90&;
+    width: 90%;
     height: 53px;
     margin: 0 auto;
     border-radius: 9px;

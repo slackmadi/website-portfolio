@@ -85,7 +85,7 @@ a {
 
 /* Titles*/
 .section-title {
-    margin: 1rem 0 4rem;
+    margin: 1rem 0 2rem;
     font-size: 2rem;
 }
 
@@ -128,7 +128,7 @@ a {
 .nav ul {
     list-style: none;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .logo {
@@ -149,6 +149,10 @@ nav ul li {
 
 nav ul li a {
     color: var(--primaryTextColor);
+}
+
+nav ul li a:hover {
+    color: var(--primaryIconColor);
 }
 
 /* Burger */
@@ -184,6 +188,10 @@ nav ul li a {
 
 .hero-name span {
     color: var(--primaryIconColor);
+}
+
+.hero-left p {
+    text-align: justify;
 }
 
 .hero-right {
@@ -230,8 +238,8 @@ nav ul li a {
     border-radius: 0.5rem;
 }
 
-.service-icon svg {
-    fill: var(--primaryIconColor);
+.service-icon img {
+    width: 30%;
 }
 
 
@@ -295,21 +303,22 @@ nav ul li a {
     color: var(--secondaryTextColor);
 }
 
-/* Skills & Education */
-#skills {
+
+/* Education Section */
+
+#educations {
     padding: var(--sectionPadding);
     background: var(--secondaryBackgrondColor);
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 3rem;
 }
 
 .education {
     display: flex;
     gap: 2rem;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+    overflow: hidden;
+    border: 1px solid var(--borderColor);
+    padding: 2rem 1.5rem;
 }
 
 .education .line {
@@ -323,12 +332,16 @@ nav ul li a {
     position: relative;
 }
 
-.education-info p {
-    margin: 0.6rem 0 1.4rem;
+.education-info {
+    width: 100%;
 }
 
-.education-years {
-    margin-bottom: 3rem;
+.education h4 {
+    margin-bottom: 0.6rem;
+}
+
+.major-info {
+    text-align: justify;
 }
 
 /* The dot on the line */
@@ -340,6 +353,258 @@ nav ul li a {
     border-radius: 50%;
     position: absolute;
     left: -6px;
+}
+
+/* Experience Section */
+
+#experiences {
+    padding: var(--sectionPadding);
+    background: var(--primaryBackgrondColor);
+}
+
+/* Works */
+
+.work {
+    display: flex;
+    gap: 2rem;
+}
+
+.work .line {
+    padding: 0 0.7rem;
+}
+
+.work .line div {
+    width: 2px;
+    height: 100%;
+    background: var(--borderColor);
+    position: relative;
+}
+
+.work-info {
+    width: 100%;
+}
+
+.work h4 {
+    margin-bottom: 0.6rem;
+}
+
+.work ul {
+    margin-bottom: 1rem;
+}
+
+.work li {
+    margin-left: 1rem;
+}
+
+/* The dot on the line */
+
+.work .line div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--borderColor);
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+/* Organizations */
+
+.organization {
+    display: flex;
+    gap: 2rem;
+}
+
+.organization .line {
+    padding: 0 0.7rem;
+}
+
+.organization .line div {
+    width: 2px;
+    height: 100%;
+    background: var(--borderColor);
+    position: relative;
+}
+
+.organization-info {
+    width: 100%;
+}
+
+.organization h4 {
+    margin-bottom: 0.6rem;
+}
+
+.organization ul {
+    margin-bottom: 1rem;
+}
+
+.organization li {
+    margin-left: 1rem;
+}
+
+
+/* The dot on the line */
+
+.organization .line div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--borderColor);
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+/* Languages & Skills */
+
+/* Languages */
+
+#languages-skills {
+    padding: var(--sectionPadding);
+    background: var(--secondaryBackgrondColor);
+}
+
+.languages-skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'languages skills';
+    gap: 3rem;
+}
+
+.languages {
+    padding: 3rem 2rem;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+    grid-area: languages;
+}
+
+.languages-icon {
+    background: var(--thirdBackgroundColor);
+    width: 90&;
+    height: 53px;
+    margin: 0 auto;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.languages-icon svg {
+    fill: var(--primaryTextColor);
+}
+
+.languages h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+.languages ul {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+.languages li {
+    font-weight: 500;
+}
+
+.languages p {
+    text-align: justify;
+}
+
+/* Skills */
+
+.skills {
+    padding: 3rem 2rem;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+    grid-area: skills;
+}
+
+.skills-icon {
+    background: var(--thirdBackgroundColor);
+    width: 100%;
+    height: 53px;
+    margin: 0 auto;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-icon svg {
+    fill: var(--primaryTextColor);
+}
+
+.skills h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+
+.skills ul {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.3rem;
+
+}
+
+/* Certificates Section */
+
+#certificates {
+    padding: var(--sectionPadding);
+
+}
+
+.certificate {
+    border-radius: var(--itemBorderRadius);
+    overflow: hidden;
+    border: 1px solid var(--borderColor);
+}
+
+.certificate-cover img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.certificate-info {
+    padding: 2rem 1.5rem;
+}
+
+.certificate-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.certificate h4 {
+    font-weight: 500;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+.certificate-title a:hover {
+    color: var(--primaryIconColor);
+}
+
+.certificate-title a {
+    color: var(--primaryTextColor);
+}
+
+
+/* Programming Skills */
+
+#programming-skills {
+    padding: var(--sectionPadding);
+    background: var(--secondaryBackgrondColor);
 }
 
 .skills-list {

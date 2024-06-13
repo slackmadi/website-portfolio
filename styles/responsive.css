@@ -8,6 +8,10 @@
         gap: 1rem;
     }
 
+    .languages-skills-grid {
+        gap: 1rem;
+    }
+
     .sklls-right {
         font-size: 0.9rem;
     }
@@ -101,11 +105,28 @@
 
     /* Skills Section */
 
+    .languages-skills-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto-fit;
+        grid-template-areas: 
+        'languages' 
+        'skills';
+        gap: 3rem;
+    }
+
+    .skills-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.3rem;
+    
+    }
+
     .skills-grid {
         gap: 1rem;
     }
 
-    
+
 
 
 }
